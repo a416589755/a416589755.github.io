@@ -317,7 +317,38 @@
 </ul>
 <p>ps:注意缩进和符号以及属性前面的空格</p>
 <p>6.在blog根目录执行hexo d命令将本地博客代码推送到github服务器<br>ps:不需要每更改一次都推送，现在本地测试准确无误后再推送</p>
-<h1 id="个人域名绑定"><a href="#个人域名绑定" class="headerlink" title="个人域名绑定"></a>个人域名绑定</h1><p>  1.域名申请(自行搞定)<br>  2.域名解析，添加如下记录值<br>记录类型|主机记录|解析线路(isp)|记录值<br>-|-|-|-<br>CNAME|www|默认|用户名.github.io<br>A|@|默认|192.30.252.153<br>A|@|默认|192.30.252.154<br>  3.在博客主目录下的找到public文件夹<br>    在里面新建名为CNAME的文件(不带后缀)<br>  4.在CNAME文件里面填写个人域名，如<br>    baidu.com<br>    ps:不带http、www等修饰<br>  5.执行hexo d命令推送</p>
+<h1 id="个人域名绑定"><a href="#个人域名绑定" class="headerlink" title="个人域名绑定"></a>个人域名绑定</h1><p>  1.域名申请(自行搞定)<br>  2.域名解析，添加如下记录值</p>
+<table>
+<thead>
+<tr>
+<th>记录类型</th>
+<th>主机记录</th>
+<th>解析线路(isp)</th>
+<th>记录值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CNAME</td>
+<td>www</td>
+<td>默认</td>
+<td>用户名.github.io</td>
+</tr>
+<tr>
+<td>A</td>
+<td>@</td>
+<td>默认</td>
+<td>192.30.252.153</td>
+</tr>
+<tr>
+<td>A</td>
+<td>@</td>
+<td>默认</td>
+<td>192.30.252.154</td>
+</tr>
+</tbody>
+</table>
+<p>  3.在博客主目录下的找到public文件夹<br>    在里面新建名为CNAME的文件(不带后缀)<br>  4.在CNAME文件里面填写个人域名，如<br>    baidu.com<br>    ps:不带http、www等修饰<br>  5.执行hexo d命令推送</p>
 
       
       
